@@ -1,0 +1,54 @@
+/* Custom styles for the website */
+/* Body Styling */
+body {
+    padding-top: 70px; /* Adjust based on your fixed navbar height */
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 10px;
+
+
+    background-color: #f8f9fa;
+}
+.footer-about, .footer-copyright {
+    margin-top: 20px;
+   
+}
+
+
+.navbar {
+    background-color: rgba(113, 44, 249, 1) !important; 
+    /* font-weight: bold;Add !important to override Bootstrap theme */
+}
+ .nav-link {
+    color: #f1ecec !important; /* Make sure link text is white in dark navbar */
+    /* font-size: 1.2rem; */
+    /* font-weight: bold; */
+   
+}
+/* Hover effect for links */
+.navbar .nav-link:hover {
+   /* color:green !important;  Change link color on hover to a bright color */
+    text-decoration: underline; /* Add underline on hover */
+}
+ .navbar-brand {
+    color: #fff !important; /* White text for the brand */
+    font-weight: bold;
+}
+
+/* Change navbar-toggler background and icon color */
+.navbar-toggler {
+    border-color: #ffffff; /* Default border color */
+}
+
+
+
+/* Custom Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h3, footer p {
+    margin: 0;
+}
