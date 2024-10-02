@@ -1,18 +1,20 @@
 /* Body Styling */
-body {
+body{
     padding-top: 10px; /* Adjust based on your fixed navbar height */
     padding-left: 10px; 
     padding-right: 10px; 
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    /* background-color: #ebeced; */
     background-color: #f8f9fa;
 }
-
 section{
     padding-top: 70px;
 }
+/*  */
 
 .footer-about, .footer-copyright {
     margin-top: 20px;
+
 }
 
 /* Navbar Styling */
@@ -71,9 +73,12 @@ form input.form-control {
     width: 100%;
 }
 
+
+
+/* Additional dark mode styles for other elements as needed */
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212; /* Dark background color */
+    background-color: #222227; /* Dark background color */
     color: #ffffff; /* Light text color */
 }
 
@@ -85,24 +90,11 @@ body.dark-mode {
     color: #ffffff; /* Light link color */
 }
 
-.btn-custom-blue.dark-mode {
-    background-color: #bb86fc; /* Dark mode button color */
-    border: none; /* Remove border */
+footer.dark-mode,
+.footer-about.dark-mode,
+.footer-copyright.dark-mode {
+    background-color: #1f1f1f ; /* Dark background for dark mode */
+    color: #ffffff; /* Light text color for dark mode */
 }
 
-.footer-about.dark-mode, .footer-copyright.dark-mode {
-    color: #ffffff; /* Light footer text color */
-}
 
-/* Additional dark mode styles for other elements as needed */
-
-/* Custom Footer Styling */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-}
-
-footer h3, footer p {
-    margin: 0;
-}
