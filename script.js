@@ -25,3 +25,18 @@ toggle.addEventListener('change', function() {
         moonIcon.style.display = 'none'; // Hide moon icon
     }
 });
+
+// Select all nav links in the offcanvas
+const navLinks = document.querySelectorAll('.offcanvas .nav-link');
+
+// Add click event to each nav link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Hide the offcanvas menu
+        const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvas) {
+            offcanvas.hide(); // Hide offcanvas if it's open
+        }
+    });
+});
+
