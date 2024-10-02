@@ -1,46 +1,96 @@
-/* Custom styles for the website */
 /* Body Styling */
 body {
     padding-top: 70px; /* Adjust based on your fixed navbar height */
     padding-left: 10px; 
     padding-right: 10px; 
     padding-bottom: 10px;
-
-
     background-color: #f8f9fa;
 }
+
 .footer-about, .footer-copyright {
     margin-top: 20px;
-   
 }
 
+/* Navbar Styling */
+.navbar, .offcanvas-header, .offcanvas-body {
+    background-color: rgba(113, 44, 249, 1) !important; /* Set consistent color for both desktop and mobile */
+}
 
-.navbar {
-    background-color: rgba(113, 44, 249, 1) !important; 
-    /* font-weight: bold;Add !important to override Bootstrap theme */
+/* Navbar link styling */
+.nav-link {
+    color: #f1ecec !important; /* Ensure link text is white */
+    
 }
- .nav-link {
-    color: #f1ecec !important; /* Make sure link text is white in dark navbar */
-    /* font-size: 1.2rem; */
-    /* font-weight: bold; */
-   
-}
-/* Hover effect for links */
+
 .navbar .nav-link:hover {
-   /* color:green !important;  Change link color on hover to a bright color */
     text-decoration: underline; /* Add underline on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.8);
 }
- .navbar-brand {
+
+/* Navbar brand styling */
+.navbar-brand {
     color: #fff !important; /* White text for the brand */
     font-weight: bold;
 }
 
-/* Change navbar-toggler background and icon color */
+/* Navbar toggler styling (for mobile) */
 .navbar-toggler {
-    border-color: #ffffff; /* Default border color */
+    border-color: #ffffff; /* Ensure white border for toggler */
 }
 
+.btn-custom-blue {
+    background-color: rgba(113, 44, 249, 1) !important; /* Custom blue background */
+    color: white;
+    border: 2px solid #f1f1f1; /* Off-white outline */
+    border-radius: 50px; /* High border-radius for oval shape */
+    padding: 8x 20px; /* Increase padding for a wider oval */
+    font-size: 1rem; /* Adjust font size as needed */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(113, 44, 249, 1));
+    /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.8); */
+}
 
+.btn-custom-blue:hover {
+    background-color: rgba(90, 30, 220, 1) !important; /* Darker blue on hover */
+    color: white;
+    border-color: #eaeaea; /* Slightly darker off-white on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Stronger white glow on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.9);
+}
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Add space between the nav links */
+}
+.form-check-input {
+    width: 40px;
+    height: 20px;
+}
+form input.form-control {
+    width: 100%;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+.navbar.dark-mode {
+    background-color: #1f1f1f; /* Dark navbar color */
+}
+
+.nav-link.dark-mode {
+    color: #ffffff; /* Light link color */
+}
+
+.btn-custom-blue.dark-mode {
+    background-color: #bb86fc; /* Dark mode button color */
+    border: none; /* Remove border */
+}
+
+.footer-about.dark-mode, .footer-copyright.dark-mode {
+    color: #ffffff; /* Light footer text color */
+}
+
+/* Additional dark mode styles for other elements as needed */
 
 /* Custom Footer Styling */
 footer {
