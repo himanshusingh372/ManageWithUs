@@ -8,7 +8,6 @@ const navbar = document.querySelector('.navbar'); // Select the navbar
 
 toggle.addEventListener('change', function() {
     document.body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-    document.footer.classList.toggle('dark-mode'); // Toggle dark mode class on footer
     footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
     footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
     footerCopyright.classList.toggle('dark-mode'); // Toggle dark mode class on footer copyright
