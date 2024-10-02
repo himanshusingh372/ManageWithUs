@@ -7,6 +7,10 @@ body {
     background-color: #f8f9fa;
 }
 
+section{
+    padding-top: 70px;
+}
+
 .footer-about, .footer-copyright {
     margin-top: 20px;
 }
