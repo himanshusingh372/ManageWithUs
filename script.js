@@ -5,10 +5,11 @@ const toggle = document.getElementById('darkModeToggle'); // Get the toggle swit
 const footerAbout = document.querySelector('.footer-about'); // Select footer about section
 const footerCopyright = document.querySelector('.footer-copyright'); // Select footer copyright section
 const navbar = document.querySelector('.navbar'); // Select the navbar
+const offcanvasElement = document.getElementById('offcanvasNavbar'); // Select offcanvas navbar
 
+// Function to handle dark mode toggle
 toggle.addEventListener('change', function() {
     document.body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-    footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
     footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
     footerCopyright.classList.toggle('dark-mode'); // Toggle dark mode class on footer copyright
     navbar.classList.toggle('dark-mode'); // Toggle dark mode class on navbar
@@ -38,4 +39,3 @@ navLinks.forEach(link => {
         }
     });
 });
-
