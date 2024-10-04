@@ -2,30 +2,47 @@
 body {
     padding-top: 10px;
     /* Adjust based on your fixed navbar height */
-/*     padding-left: 10px;
+    /*     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 0px; */
     /* background-color: #ebeced; */
-    background-color: hsla(0,0%,100%,1);
+    background-color: hsla(0, 0%, 100%, 1);
 }
 
 .custom-section {
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
-     text-align: center;
-    
+    text-align: center;
+
 }
 
-/* SACHIN SINGH */
+.custom-hamburger {
+    transform: scale(0.75);
+    display: inline-block;
+}
+
+.custom-hamburger .navbar-toggler-icon {
+    transform: scale(0.75);
+    /* Scale down to 75% of original size */
+    display: inline-block;
+    /* Ensure the icon behaves like an inline block element */
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+
+
 .footer-class,
 .footer-about,
 .footer-copyright {
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #e4e4eb;/* light background for dark mode */
-    color: #1f1f1f; /* dark text color for dark mode */
+    background-color: #e4e4eb;
+    /* light background for dark mode */
+    color: #1f1f1f;
+    /* dark text color for dark mode */
 
 }
 
