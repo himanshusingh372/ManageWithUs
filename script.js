@@ -48,3 +48,22 @@ navLinks.forEach(link => {
         }, 300); // Adjust the duration to match the offcanvas transition time
     });
 });
+
+// script.js
+
+// Select the offcanvas element
+const offcanvasElement = document.getElementById('offcanvasNavbar');
+
+// Create a Bootstrap offcanvas instance
+const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+// Add event listener for clicks outside the offcanvas
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is not inside the offcanvas or the toggle button
+    if (!offcanvasElement.contains(event.target) && !event.target.matches('.navbar-toggler')) {
+        if (offcanvasInstance && offcanvasElement.classList.contains('show')) {
+            offcanvasInstance.hide(); // Hide the offcanvas menu
+        }
+    }
+});
+

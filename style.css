@@ -1,11 +1,7 @@
 /* Body Styling */
 body {
-    padding-top: 10px;
-    /* Adjust based on your fixed navbar height */
-    /*     padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px; */
-    /* background-color: #ebeced; */
+    padding-top: 70px;
+    /* Adjusted for fixed navbar */
     background-color: hsla(0, 0%, 100%, 1);
 }
 
@@ -14,7 +10,6 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-
 }
 
 .custom-hamburger {
@@ -24,13 +19,9 @@ body {
 
 .custom-hamburger .navbar-toggler-icon {
     transform: scale(0.75);
-    /* Scale down to 75% of original size */
     display: inline-block;
-    /* Ensure the icon behaves like an inline block element */
     margin: 0 auto;
-    /* Center horizontally */
 }
-
 
 .footer-class,
 .footer-about,
@@ -39,10 +30,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     background-color: #e4e4eb;
-    /* light background for dark mode */
     color: #1f1f1f;
-    /* dark text color for dark mode */
-
 }
 
 /* Navbar Styling */
@@ -50,65 +38,46 @@ body {
 .offcanvas-header,
 .offcanvas-body {
     background-color: rgba(113, 44, 249, 1) !important;
-    /* Set consistent color for both desktop and mobile */
 }
 
-/* Navbar link styling */
 .nav-link {
     color: #f1ecec !important;
-    /* Ensure link text is white */
-
 }
 
 .navbar .nav-link:hover {
     text-decoration: underline;
-    /* Add underline on hover */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-/* Navbar brand styling */
 .navbar-brand {
     color: #fff !important;
-    /* White text for the brand */
     font-weight: bold;
 }
 
-/* Navbar toggler styling (for mobile) */
 .navbar-toggler {
     border-color: #ffffff;
-    /* Ensure white border for toggler */
 }
 
 .btn-custom-blue {
     background-color: rgba(113, 44, 249, 1) !important;
-    /* Custom blue background */
     color: white;
     border: 2px solid #f1f1f1;
-    /* Off-white outline */
     border-radius: 50px;
-    /* High border-radius for oval shape */
-    padding: 8x 20px;
-    /* Increase padding for a wider oval */
+    padding: 8px 20px;
     font-size: 1rem;
-    /* Adjust font size as needed */
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(113, 44, 249, 1));
-    /* text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.8); */
 }
 
 .btn-custom-blue:hover {
     background-color: rgba(90, 30, 220, 1) !important;
-    /* Darker blue on hover */
     color: white;
     border-color: #eaeaea;
-    /* Slightly darker off-white on hover */
     box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-    /* Stronger white glow on hover */
     text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.9);
 }
 
 .navbar-nav .nav-item {
     margin-right: 20px;
-    /* Add space between the nav links */
 }
 
 .form-check-input {
@@ -120,49 +89,36 @@ form input.form-control {
     width: 100%;
 }
 
+.offcanvas {
+    width: 70vw;
+    /* Set width to 70% of the viewport width */
+    max-width: 70%;
+    /* Ensure it doesn't exceed 70% */
+}
 
-
-/* Additional dark mode styles for other elements as needed */
-/* Dark Mode Styles */
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #222227;
-    /* Dark background color */
     color: #ffffff;
-    /* Light text color */
 }
 
 .navbar.dark-mode {
     background-color: #1f1f1f;
-    /* Dark navbar color */
 }
 
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
     background-color: #474750 !important;
-    /* Dark background */
     color: #ffffff !important;
-    /* Light text color */
 }
-
-/* You may need to add other dark mode styles for your elements */
-
 
 .nav-link.dark-mode {
     color: #ffffff;
-    /* Light link color */
 }
 
-/* Dark Mode Styles with !important */
 .footer-class.dark-mode,
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
     background-color: #474750 !important;
-    /* Dark background */
     color: #ffffff !important;
-    /* Light text color */
-}
-
-.sachin {
-    border: 4px solid purple;
 }
