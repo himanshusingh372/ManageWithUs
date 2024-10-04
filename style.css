@@ -6,7 +6,7 @@ body {
     padding-right: 10px;
     padding-bottom: 0px; */
     /* background-color: #ebeced; */
-    background-color: #f8f9fa;
+    background-color: hsla(0,0%,100%,1);
 }
 
 .custom-section {
@@ -24,7 +24,7 @@ body {
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #ffffff;/* light background for dark mode */
+    background-color: #e4e4eb;/* light background for dark mode */
     color: #1f1f1f; /* dark text color for dark mode */
 
 }
@@ -129,7 +129,7 @@ body.dark-mode {
 .footer-class.dark-mode,
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
-    background-color: #222227 !important;
+    background-color: #474750 !important;
     /* Dark background */
     color: #ffffff !important;
     /* Light text color */
