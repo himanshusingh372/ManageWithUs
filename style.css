@@ -9,7 +9,7 @@ body {
     background-color: #f8f9fa;
 }
 
-section {
+.custom-section {
     padding-top: 70px;
 }
 
@@ -128,4 +128,8 @@ body.dark-mode {
     /* Dark background */
     color: #ffffff !important;
     /* Light text color */
+}
+
+.sachin {
+    border: 4px solid purple;
 }
