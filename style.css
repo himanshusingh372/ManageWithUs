@@ -31,12 +31,6 @@ body {
     /* Center horizontally */
 }
 
-.footer {
-    background-color: #e4e4eb;
-    /* light background for dark mode */
-    color: #1f1f1f;
-    /* dark text color for dark mode */
-}
 
 .footer-class,
 .footer-about,
