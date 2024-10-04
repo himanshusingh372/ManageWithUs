@@ -2,19 +2,20 @@
 body {
     padding-top: 10px;
     /* Adjust based on your fixed navbar height */
-    padding-left: 10px;
+/*     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0px; */
     /* background-color: #ebeced; */
     background-color: #f8f9fa;
 }
 
 .custom-section {
     padding-top: 70px;
+    padding-left: 30px;
 }
 
 /* SACHIN SINGH */
-
+.footer-class,
 .footer-about,
 .footer-copyright {
     margin-top: 20px;
@@ -122,6 +123,7 @@ body.dark-mode {
 }
 
 /* Dark Mode Styles with !important */
+.footer-class.dark-mode,
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
     background-color: #222227 !important;
