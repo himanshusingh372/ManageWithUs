@@ -10,10 +10,11 @@ body{
 section{
     padding-top: 70px;
 }
-/*  FOR THE SACHIN SINGH */
+/* SACHIN SINGH */
+
 .footer-about, .footer-copyright {
     margin-top: 20px;
-     background-color: #ffffff ; /* light background for dark mode */
+    background-color: #ffffff ; /* light background for dark mode */
     color: #1f1f1f; /* dark text color for dark mode */
 
 }
@@ -91,7 +92,6 @@ body.dark-mode {
     color: #ffffff; /* Light link color */
 }
 
-footer.dark-mode,
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
     background-color: #1f1f1f ; /* Dark background for dark mode */
