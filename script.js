@@ -2,26 +2,28 @@
 const sunIcon = document.querySelector('.fa-sun'); // Select sun icon
 const moonIcon = document.querySelector('.fa-moon'); // Select moon icon
 const toggle = document.getElementById('darkModeToggle'); // Get the toggle switch
-const footerclass = document.querySelector('.footer-class'); // Select footer about section
 const footerAbout = document.querySelector('.footer-about'); // Select footer about section
 const footerCopyright = document.querySelector('.footer-copyright'); // Select footer copyright section
 const navbar = document.querySelector('.navbar'); // Select the navbar
 
+// Check local storage for dark mode preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode'); // Add dark mode class to body
+    navbar.classList.add('dark-mode'); // Add dark mode class to navbar
+    footerAbout.classList.add('dark-mode'); // Add dark mode class to footer about
+    footerCopyright.classList.add('dark-mode'); // Add dark mode class to footer copyright
+    toggle.checked = true; // Set toggle switch to checked
+}
+
 toggle.addEventListener('change', function () {
-    document.body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-    navbar.classList.toggle('dark-mode'); // Toggle dark mode class on navbar
+    const isChecked = toggle.checked; // Check if toggle is checked
+    document.body.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on body
+    navbar.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on navbar
+    footerAbout.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on footer about
+    footerCopyright.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on footer copyright
 
-    // Log statements to verify class toggling
-    console.log('Toggling dark mode for footer...');
-    console.log(footerclass.classList); // Check if the class is toggled correctly
-    console.log(footerAbout.classList); // Check if the class is toggled correctly
-    console.log(footerCopyright.classList);
-
-    if (footerAbout && footerCopyright) {
-        footerclass.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
-        footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
-        footerCopyright.classList.toggle('dark-mode'); // Toggle dark mode class on footer copyright
-    }
+    // Save the current state to local storage
+    localStorage.setItem('darkMode', isChecked ? 'enabled' : 'disabled');
 });
 
 // Select all nav links in the offcanvas
