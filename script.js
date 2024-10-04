@@ -5,26 +5,23 @@ const toggle = document.getElementById('darkModeToggle'); // Get the toggle swit
 const footerAbout = document.querySelector('.footer-about'); // Select footer about section
 const footerCopyright = document.querySelector('.footer-copyright'); // Select footer copyright section
 const navbar = document.querySelector('.navbar'); // Select the navbar
-const offcanvasElement = document.getElementById('offcanvasNavbar'); // Select offcanvas navbar
 
-// Function to handle dark mode toggle
-toggle.addEventListener('change', function() {
+toggle.addEventListener('change', function () {
     document.body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-    footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
-    footerCopyright.classList.toggle('dark-mode'); // Toggle dark mode class on footer copyright
     navbar.classList.toggle('dark-mode'); // Toggle dark mode class on navbar
 
-    const isDarkMode = document.body.classList.contains('dark-mode');
+    // Log statements to verify class toggling
+    console.log('Toggling dark mode for footer...');
+    console.log(footerAbout.classList); // Check if the class is toggled correctly
+    console.log(footerCopyright.classList);
 
-    // Toggle icons based on dark mode state
-    if (isDarkMode) {
-        sunIcon.style.display = 'none'; // Hide sun icon
-        moonIcon.style.display = 'inline'; // Show moon icon
-    } else {
-        sunIcon.style.display = 'inline'; // Show sun icon
-        moonIcon.style.display = 'none'; // Hide moon icon
+    if (footerAbout && footerCopyright) {
+        footerAbout.classList.toggle('dark-mode'); // Toggle dark mode class on footer about
+        footerCopyright.classList.toggle('dark-mode'); // Toggle dark mode class on footer copyright
     }
 });
+
+
 
 // Select all nav links in the offcanvas
 const navLinks = document.querySelectorAll('.offcanvas .nav-link');

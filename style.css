@@ -13,12 +13,16 @@ section {
     padding-top: 70px;
 }
 
-/*  */
+/* SACHIN SINGH */
 
 .footer-about,
 .footer-copyright {
     margin-top: 20px;
-    
+    background-color: #ffffff;
+    /* light background for dark mode */
+    color: #1f1f1f;
+    /* dark text color for dark mode */
+
 }
 
 /* Navbar Styling */
@@ -117,11 +121,11 @@ body.dark-mode {
     /* Light link color */
 }
 
-footer.dark-mode,
+/* Dark Mode Styles with !important */
 .footer-about.dark-mode,
 .footer-copyright.dark-mode {
-    background-color: #1f1f1f;
-    /* Dark background for dark mode */
-    color: #ffffff;
-    /* Light text color for dark mode */
+    background-color: #222227 !important;
+    /* Dark background */
+    color: #ffffff !important;
+    /* Light text color */
 }
