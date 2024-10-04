@@ -13,6 +13,7 @@ body {
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
+     text-align: center;
     
 }
 
@@ -21,10 +22,10 @@ body {
 .footer-about,
 .footer-copyright {
     margin-top: 20px;
-    background-color: #ffffff;
-    /* light background for dark mode */
-    color: #1f1f1f;
-    /* dark text color for dark mode */
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;/* light background for dark mode */
+    color: #1f1f1f; /* dark text color for dark mode */
 
 }
 
