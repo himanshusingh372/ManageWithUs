@@ -76,6 +76,7 @@ body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.9);
 }
 
+
 .navbar-nav .nav-item {
     margin-right: 20px;
 }
@@ -92,8 +93,14 @@ form input.form-control {
 .offcanvas {
     width: 70vw;
     /* Set width to 70% of the viewport width */
-    max-width: 70%;
-    /* Ensure it doesn't exceed 70% */
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 767px) {
+    .offcanvas {
+        max-width: 70%;
+        /* Ensure it doesn't exceed 70% on mobile */
+    }
 }
 
 /* Dark Mode Styles */
@@ -121,4 +128,23 @@ body.dark-mode {
 .footer-copyright.dark-mode {
     background-color: #474750 !important;
     color: #ffffff !important;
+}
+
+.sun-icon {
+    color: #ff9700;
+}
+
+.moon-icon {
+    color: #333;
+    /* Dark gray color for the moon */
+    display: none;
+}
+
+/* When dark mode is active, show moon and hide sun */
+.dark-mode .sun-icon {
+    display: none;
+}
+
+.dark-mode .moon-icon {
+    display: inline;
 }

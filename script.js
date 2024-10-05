@@ -1,4 +1,3 @@
-// script.js
 const sunIcon = document.querySelector('.fa-sun'); // Select sun icon
 const moonIcon = document.querySelector('.fa-moon'); // Select moon icon
 const toggle = document.getElementById('darkModeToggle'); // Get the toggle switch
@@ -13,6 +12,8 @@ if (localStorage.getItem('darkMode') === 'enabled') {
     footerAbout.classList.add('dark-mode'); // Add dark mode class to footer about
     footerCopyright.classList.add('dark-mode'); // Add dark mode class to footer copyright
     toggle.checked = true; // Set toggle switch to checked
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'inline-block';
 }
 
 toggle.addEventListener('change', function () {
@@ -21,6 +22,15 @@ toggle.addEventListener('change', function () {
     navbar.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on navbar
     footerAbout.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on footer about
     footerCopyright.classList.toggle('dark-mode', isChecked); // Toggle dark mode class on footer copyright
+
+    // Toggle between sun and moon icons
+    if (isChecked) {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline-block';
+    } else {
+        sunIcon.style.display = 'inline-block';
+        moonIcon.style.display = 'none';
+    }
 
     // Save the current state to local storage
     localStorage.setItem('darkMode', isChecked ? 'enabled' : 'disabled');
@@ -49,8 +59,6 @@ navLinks.forEach(link => {
     });
 });
 
-// script.js
-
 // Select the offcanvas element
 const offcanvasElement = document.getElementById('offcanvasNavbar');
 
@@ -66,4 +74,3 @@ document.addEventListener('click', function (event) {
         }
     }
 });
-
